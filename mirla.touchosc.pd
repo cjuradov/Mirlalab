@@ -1,0 +1,10 @@
+#N canvas 100 100 700 600 10;
+#X obj 10 10 dumpOSC 8000;
+#X obj 10 30 OSCroute /p1 /p2 /p3 /4;
+#X obj 10 50 OSCroute /fader31;
+#X obj 10 100 * 127;
+#X obj 10 130 ctlout 1 1;
+#X connect 0 0 1 0;
+#X connect 1 2 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
